@@ -9,7 +9,7 @@ function handleClick(event){
     if (window.location.includes('local')){
 route = 'http://localHost/api/user-profiles/'
     } else {
-        route = '/api/user-profiles/'
+        route = 'https://sakura-api.herokuapp.com/apiuser-profiles/'
     }
     axios.get(route + id).then(function(res){
         //put some rendering stuff here for a button to click 'connect' or something

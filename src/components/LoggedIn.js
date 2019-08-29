@@ -33,7 +33,7 @@ export default class LoggedIn extends React.Component {
             <div>
                 <NavBar />
                 <div id="info-box" className="about-us">
-                    <h2>Welcome <span id="userName"></span>!</h2>
+                    <h2>Welcome <span id="avatar"><Avatar /></span><span id="userName"></span>!</h2>
                     <UserPageShell />
                 </div>
             </div>
