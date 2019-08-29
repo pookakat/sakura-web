@@ -8,7 +8,7 @@ function setState(){
         };
     }
     else{
-        var state = {
+        state = {
             isLoggedIn: false
         };
     };
