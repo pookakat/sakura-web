@@ -72,7 +72,6 @@ export default class UserDetails extends React.Component {
     };
 
     render(){
-        {this.setState}
         const state = Object.assign({}, this.state);
         if (!state.isLoggedIn) {
             return(
