@@ -1,7 +1,7 @@
 import React from "react";
 import axios from 'axios';
 
-setState = () => {
+function setState(){
     if (window.localStorage.getItem('userName')){
         var state = {
             isLoggedIn: false
