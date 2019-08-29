@@ -2,9 +2,19 @@ import React from "react";
 import axios from 'axios';
 
 export default class UserDetails extends React.Component {
-    state = {
-        isLoggedIn: false
+    setState = () => {
+        if (window.localStorage.getItem('userName')){
+            state = {
+                isLoggedIn: false
+            };
+        }
+        else{
+            state = {
+                isLoggedIn: false
+            };
+        };
     };
+    
     checkLogin = (event) => {
         event.preventDefault();
   
@@ -59,7 +69,8 @@ export default class UserDetails extends React.Component {
     };
 
     render(){
-      const state = Object.assign({}, this.state);
+        {this.setState}
+        const state = Object.assign({}, this.state);
         if (!state.isLoggedIn) {
             return(
                 <form className="form-inline my-2 my-lg-0" id="loginForm" onSubmit={this.checkLogin}>
