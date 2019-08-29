@@ -1,6 +1,7 @@
 import React from "react";
 import LogIn from './LogIn'
 
+
 export default class NavBar extends React.Component {
     
     render(){

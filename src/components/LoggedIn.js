@@ -1,5 +1,6 @@
 import React from "react";
 import UserPageShell from './UserPageShell';
+import NavBar from './NavBar';
 
 
 export default class LoggedIn extends React.Component {
@@ -29,9 +30,12 @@ export default class LoggedIn extends React.Component {
     
     render(){
         return(
-            <div id="info-box" className="about-us">
-                <h2>Welcome <span id="userName"></span>!</h2>
-                <UserPageShell />
+            <div>
+                <NavBar />
+                <div id="info-box" className="about-us">
+                    <h2>Welcome <span id="userName"></span>!</h2>
+                    <UserPageShell />
+                </div>
             </div>
         );
     };
