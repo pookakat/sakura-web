@@ -1,7 +1,7 @@
 import React from "react";
 import UserPageShell from './UserPageShell';
 import NavBar from './NavBar';
-import Avatar from './Avatar';
+
 
 
 export default class LoggedIn extends React.Component {
@@ -28,13 +28,18 @@ export default class LoggedIn extends React.Component {
 
         }
     };
+
+    renderGravatar = (gravatar) => {
+       document.getElementById("avatar").appendChild("img");
+       img.src = `${gravatar}`; 
+    }
     
     render(){
         return(
             <div>
                 <NavBar />
                 <div id="info-box" className="about-us">
-                    <h2>Welcome <span id="avatar"><Avatar /></span><span id="userName"></span>!</h2>
+                    <h2>Welcome <span id="avatar"></span><span id="userName"></span>!</h2>
                     <UserPageShell />
                 </div>
             </div>
@@ -43,7 +48,9 @@ export default class LoggedIn extends React.Component {
     componentDidMount(){
         const currentUser = window.localStorage.getItem('userName');
         const pageTheme = window.localStorage.getItem('theme');
+        const gravatar = window.localStorage.getItem('gravatar');
         document.getElementById('userName').textContent = currentUser;
         this.changeTheme(pageTheme);
+        this.renderGravatar(gravatar);
     };
 }

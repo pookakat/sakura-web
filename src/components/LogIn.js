@@ -48,8 +48,10 @@ export default class UserDetails extends React.Component {
         .then(function(res){
             const userName = res.data[0].userName;
             const theme = res.data[0].theme;
+            const gravatar = res.data[0].gravatar;
             window.localStorage.setItem('userName', userName);
             window.localStorage.setItem('theme', theme);
+            window.localStorage.setItem('avatar', gravatar);
             state.isLoggedIn = true;
             _this.setState(state);
             window.location.assign("/loggedin"); 
