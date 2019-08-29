@@ -227,7 +227,7 @@ export default class Register extends React.Component {
           if(window.location.href.includes('local')){
                 route = "http://localHost/api/check-user"
           } else {
-              route = "https://tomtestapi.herokuapp.com/api/check-user";
+              route = "https://sakura-garden.herokuapp.com/api/check-user";
           }
           axios.get(route, {
             method: 'GET',
@@ -264,7 +264,7 @@ export default class Register extends React.Component {
           if(window.location.href.includes('local')){
                 route = "http://localHost/api/check-user"
           } else {
-              route = "https://tomtestapi.herokuapp.com/api/check-user";
+              route = "https://sakura-garden.herokuapp.com/api/check-user";
           }
           axios.get(route, {
             method: 'GET',
@@ -383,7 +383,7 @@ export default class Register extends React.Component {
                     if(window.location.href.includes('local')){
                             route = "http://localHost/api/user-profiles/newUser"
                     } else {
-                        route = "https://tomtestapi.herokuapp.com/api/user-profiles/newUser";
+                        route = "https://sakura-garden.herokuapp.com/api/user-profiles/newUser";
                     }
                     axios.post(route, {
                         headers: "ACCEPT",

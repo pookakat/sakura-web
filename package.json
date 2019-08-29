@@ -2,7 +2,7 @@
   "name": "sakura-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tomtestapi.herokuapp.com/",
+  "homepage": "https://sakura-garden.herokuapp.com/",
   "dependencies": {
     "all": "0.0.0",
     "axios": "^0.19.0",
