@@ -16,7 +16,7 @@ export default class UserDetails extends React.Component {
         if(window.location.href.includes('local')){
                 route = `http://localHost/api/user-profiles/${user}`
             } else {
-                route = `/api/user-profiles/${user}`;
+                route = `https://sakura-api.herokuapp.com/api/user-profiles/${user}`;
             }
         axios.get(route, {
             method: 'GET',
