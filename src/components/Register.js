@@ -2,7 +2,7 @@
 import React from "react";
 import ToggleSwitch from './ToggleSwitch';
 import axios from 'axios';
-import {hex_md5} from '../../md5';
+import {hex_md5} from '../md5';
 
 export default class Register extends React.Component {
     render(){
