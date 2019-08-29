@@ -19,22 +19,21 @@ var b64pad  = "";  /* base-64 pad character. "=" for strict RFC compliance   */
  * They take string arguments and return either hex or base-64 encoded strings
  */
 function hex_md5(s)    { return rstr2hex(rstr_md5(str2rstr_utf8(s))); }
-function b64_md5(s)    { return rstr2b64(rstr_md5(str2rstr_utf8(s))); }
-function any_md5(s, e) { return rstr2any(rstr_md5(str2rstr_utf8(s)), e); }
+/*function any_md5(s, e) { return rstr2any(rstr_md5(str2rstr_utf8(s)), e); }
 function hex_hmac_md5(k, d)
   { return rstr2hex(rstr_hmac_md5(str2rstr_utf8(k), str2rstr_utf8(d))); }
 function b64_hmac_md5(k, d)
   { return rstr2b64(rstr_hmac_md5(str2rstr_utf8(k), str2rstr_utf8(d))); }
 function any_hmac_md5(k, d, e)
-  { return rstr2any(rstr_hmac_md5(str2rstr_utf8(k), str2rstr_utf8(d)), e); }
+  { return rstr2any(rstr_hmac_md5(str2rstr_utf8(k), str2rstr_utf8(d)), e); }*/
 
 /*
  * Perform a simple self-test to see if the VM is working
  */
-function md5_vm_test()
+/*function md5_vm_test()
 {
-  return hex_md5("abc").toLowerCase() == "900150983cd24fb0d6963f7d28e17f72";
-}
+  return hex_md5("abc").toLowerCase() === "900150983cd24fb0d6963f7d28e17f72";
+}*/
 
 /*
  * Calculate the MD5 of a raw string
@@ -130,7 +129,7 @@ function rstr2any(input, encoding)
   var remainders = Array(full_length);
   for(j = 0; j < full_length; j++)
   {
-    quotient = Array();
+    quotient = Array[];
     x = 0;
     for(i = 0; i < dividend.length; i++)
     {
@@ -195,23 +194,23 @@ function str2rstr_utf8(input)
 /*
  * Encode a string as utf-16
  */
-function str2rstr_utf16le(input)
+/*function str2rstr_utf16le(input)
 {
   var output = "";
   for(var i = 0; i < input.length; i++)
     output += String.fromCharCode( input.charCodeAt(i)        & 0xFF,
                                   (input.charCodeAt(i) >>> 8) & 0xFF);
   return output;
-}
+}*/
 
-function str2rstr_utf16be(input)
+/*function str2rstr_utf16be(input)
 {
   var output = "";
   for(var i = 0; i < input.length; i++)
     output += String.fromCharCode((input.charCodeAt(i) >>> 8) & 0xFF,
                                    input.charCodeAt(i)        & 0xFF);
   return output;
-}
+}*/
 
 /*
  * Convert a raw string to an array of little-endian words
@@ -222,7 +221,7 @@ function rstr2binl(input)
   var output = Array(input.length >> 2);
   for(var i = 0; i < output.length; i++)
     output[i] = 0;
-  for(var i = 0; i < input.length * 8; i += 8)
+  for(i = 0; i < input.length * 8; i += 8)
     output[i>>5] |= (input.charCodeAt(i / 8) & 0xFF) << (i%32);
   return output;
 }
@@ -332,7 +331,7 @@ function binl_md5(x, len)
     c = safe_add(c, oldc);
     d = safe_add(d, oldd);
   }
-  return Array(a, b, c, d);
+  return Array[a, b, c, d];
 }
 
 /*
