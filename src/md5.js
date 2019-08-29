@@ -129,7 +129,7 @@ function rstr2any(input, encoding)
   var remainders = Array(full_length);
   for(j = 0; j < full_length; j++)
   {
-    quotient = Array[];
+    quotient = Array();
     x = 0;
     for(i = 0; i < dividend.length; i++)
     {
@@ -331,7 +331,7 @@ function binl_md5(x, len)
     c = safe_add(c, oldc);
     d = safe_add(d, oldd);
   }
-  return Array[a, b, c, d];
+  return Array(a, b, c, d);
 }
 
 /*
