@@ -4,15 +4,16 @@ import axios from 'axios';
 export default class UserDetails extends React.Component {
     setState = () => {
         if (window.localStorage.getItem('userName')){
-            state = {
+            var state = {
                 isLoggedIn: false
             };
         }
         else{
-            state = {
+            var state = {
                 isLoggedIn: false
             };
         };
+        return state;
     };
     
     checkLogin = (event) => {
