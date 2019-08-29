@@ -39,6 +39,7 @@ export default class UserDetails extends React.Component {
             window.localStorage.setItem('theme', theme);
             state.isLoggedIn = true;
             _this.setState(state);
+            window.location.assign("/loggedin"); 
         })
         .catch(function(err){
         });
@@ -49,12 +50,12 @@ export default class UserDetails extends React.Component {
     };
    
     LogOut = (event) => {
-        event.PreventDefault();
         const state = Object.assign({}, this.state);
         const _this = this;
         state.isLoggedIn = false;
         window.localStorage.clear();
         _this.setState(state);
+        window.location.assign("/"); 
     };
 
     render(){
