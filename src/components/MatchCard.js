@@ -3,9 +3,19 @@ import React from "react";
 
 
 function MatchCard(props){
-    /*handleClick = (id) =>{
-        this.handleClick = this.handleClick.bind(this);
-        let route;
+    return(
+        <div className = "card" id={props.id} onClick={this.handleClick} >
+            <h3>{props.userName}</h3>
+            <span>{props.distance},</span>
+            <span>{props.gender},</span> 
+            <span>{props.summary}</span> 
+        </div>
+    )
+    handleClick = (event) => {
+        event.preventDefault();
+        var idClicked = event.srcElement.id;
+        console.log(idClicked + "has been clicked");
+        /*let route;
         if (window.location.includes('local')){
     route = 'http://localHost/api/user-profiles/'
         } else {
@@ -27,15 +37,7 @@ function MatchCard(props){
             }
             axios.post( routed, newConnection ).then(function(response){
             })
-        })
-    };*/
-    return(
-        <div className = "card" id={props.id} onClick={this.handleClick} >
-            <h3>{props.userName}</h3>
-            <span>{props.distance},</span>
-            <span>{props.gender},</span> 
-            <span>{props.summary}</span> 
-        </div>
-    )
+        })*/
+    };
 }
 export default MatchCard;
