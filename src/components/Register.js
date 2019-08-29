@@ -345,7 +345,7 @@ export default class Register extends React.Component {
                 geocode: 'tbd',
                 password: password.value,
                 image: 'tbd',
-                avatar: gravatar,
+                avatar: 'undefined',
                 intro: 'currently blank',
                 hasGarden: hasGarden,
                 availableTime: time.value,
