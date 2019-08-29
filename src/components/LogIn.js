@@ -1,21 +1,23 @@
 import React from "react";
 import axios from 'axios';
 
-export default class UserDetails extends React.Component {
-    setState = () => {
-        if (window.localStorage.getItem('userName')){
-            var state = {
-                isLoggedIn: false
-            };
-        }
-        else{
-            var state = {
-                isLoggedIn: false
-            };
+setState = () => {
+    if (window.localStorage.getItem('userName')){
+        var state = {
+            isLoggedIn: false
         };
-        return state;
+    }
+    else{
+        var state = {
+            isLoggedIn: false
+        };
     };
-    
+    return state;
+};
+
+
+export default class UserDetails extends React.Component {
+    state = setState();
     checkLogin = (event) => {
         event.preventDefault();
   
