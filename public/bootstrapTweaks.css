@@ -1,0 +1,158 @@
+.dkpink-bkg{
+    background-color: #E37DB0;
+}
+.dkpink-txt{
+    color: rgb(235, 49, 179);
+}
+h2{
+    color: green;
+}
+h3{
+    color: green;
+}
+.register-button{
+    font-size: 20px;
+    margin: 20px;
+    box-shadow:inset 0px 1px 0px 0px #cf866c;   
+    background:linear-gradient(to bottom, #f2b6cc 5%, #eb31b3 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2b6cc', endColorstr='#eb31b3',GradientType=0);
+    background-color:#f2b6cc;
+    border-radius:8px;
+    border:1px solid #942911;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #854629;
+}
+.register-button:hover {
+    background:linear-gradient(to bottom, #eb31b3 5%, #f2b6cc 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb31b3', endColorstr='#f2b6cc',GradientType=0);
+    background-color:#eb31b3;
+}
+.register-button:active {
+    position:relative;
+    top:1px;
+}
+.ltpink-bkg{
+    background-color: #F2B6CC
+}
+.pink-theme{
+    background-image: url('./assets/bg.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.green-theme{
+    background-image: url('./assets/japanese_bamboo_forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.ltgreen-bkg{
+    background-color: rgb(201, 241, 160);
+}
+.dkgreen-bkg{
+    background-color: #34702C;
+}
+.about-us{
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    text-align: center;
+}
+.register{
+    max-width: 60%;
+    padding: 0 32px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.lead{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+}
+.twenty{
+    width: 20%;
+}
+.produce{
+    display: none;
+}
+.other-plants{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.warn{
+    color: red;
+}
+.warning{
+    color: red;
+    text-align: right;
+    font-size: 10px;
+    width: 100%;
+}
+#not-unique{
+    display: none;
+}
+.onoffswitch {
+    margin-left: 50px;
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Forest";
+    padding-left: 10px;
+    background-color: #16750F; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Flower";
+    padding-right: 10px;
+    background-color: #F7A6F7; color: #FA0D0D;
+    text-align: right;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+#user-details{
+    list-style: none;
+}
+#choices{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.match-load{
+    border: 1px solid pink;
+    border-radius: 2px;
+}
