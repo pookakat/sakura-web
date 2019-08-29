@@ -1,7 +1,7 @@
 import React from "react";
 //import axios from 'axios';
 
-handleClick = (event) => {
+function handleClick(event){
     event.preventDefault();
     var idClicked = event.srcElement.id;
     console.log(idClicked + "has been clicked");
