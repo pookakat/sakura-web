@@ -30,8 +30,9 @@ export default class LoggedIn extends React.Component {
     };
 
     renderGravatar = (gravatar) => {
-       document.getElementById("avatar").appendChild("img");
-       img.src = `${gravatar}`; 
+        var elem = document.createElement("img");
+       document.getElementById("avatar").appendChild(elem);
+       elem.src = `${gravatar}`; 
     }
     
     render(){
