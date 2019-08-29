@@ -2,7 +2,6 @@
 import React from "react";
 import ToggleSwitch from './ToggleSwitch';
 import axios from 'axios';
-import {hex_md5} from '../md5';
 
 export default class Register extends React.Component {
     render(){
@@ -337,8 +336,6 @@ export default class Register extends React.Component {
         const hasGarden = document.getElementById("yes-garden").checked;
 
         if(userName.value && firstName.value && password.value && email.value && knownAs.value && city.value && gender.value && time.value && dateOfBirth.value) {
-            const emailHash = hex_md5(email.value);
-            const gravatar = `https://www.gravatar.com/avatar/${emailHash}`;
             const userData = {
                 userName: userName.value,
                 firstName: firstName.value,
