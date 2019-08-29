@@ -4,7 +4,7 @@ import axios from 'axios';
 function setState(){
     if (window.localStorage){
         var state = {
-            isLoggedIn: false
+            isLoggedIn: true
         };
     }
     else{
