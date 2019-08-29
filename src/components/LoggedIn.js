@@ -1,6 +1,7 @@
 import React from "react";
 import UserPageShell from './UserPageShell';
 import NavBar from './NavBar';
+import Avatar from './Avatar';
 
 
 export default class LoggedIn extends React.Component {
